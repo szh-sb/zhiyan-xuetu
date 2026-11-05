@@ -205,7 +205,7 @@ button:focus-visible,a:focus-visible,.step:focus-visible{outline:3px solid #4d9d
 .rb-chart-note{font-size:10px!important;line-height:1.5!important;margin-top:13px!important;color:#a2c4a6!important;letter-spacing:.015em}
 /* Navigation scroll feedback */
 .header{transition:background .3s ease,box-shadow .3s ease}
-.header.rb-scrolled{background:rgba(249,251,247,.92)!important;backdrop-filter:blur(18px) saturate(1.25);box-shadow:0 8px 30px -24px rgba(22,72,46,.28)}
+.header.rb-scrolled{background:rgba(8,12,27,.97)!important;backdrop-filter:blur(20px) saturate(1.2);box-shadow:0 10px 35px -22px rgba(0,0,0,.65)}
 .desktop-nav>a{position:relative}
 .desktop-nav>a:after{content:"";position:absolute;left:9%;right:9%;bottom:-8px;border-radius:10px;height:2px;transform:scaleX(0);transform-origin:center;background:#35885a;transition:transform .25s ease}
 .desktop-nav>a:is(:hover,.rb-current):after{transform:scaleX(1)}
@@ -516,6 +516,34 @@ body{background:#090e22;color:#edf4ff}
 @media(max-width:920px){.header-inner{height:79px}.orbit-brand{gap:7px}.orbit-emblem{width:55px;height:55px}.orbit-wordmark strong{font-size:20px}.orbit-wordmark small{font-size:8px}.header .mobile-nav a,.header .mobile-nav button,.header.studio-header-light .mobile-nav a,.header.studio-header-light .mobile-nav button{color:#e4effd}}
 @media(max-width:650px){.header-inner{height:74px}.orbit-brand{gap:4px;padding:3px 7px 3px 3px;border-radius:15px}.orbit-emblem{width:47px;height:47px;border-radius:13px}.orbit-wordmark strong{font-size:18px}.orbit-wordmark small{font-size:7px;letter-spacing:.16em}.orbit-satellite{font-size:17px}.orbit-emblem-hero{width:48px;height:48px}.hero-brand-copy b{font-size:12px}.hero-brand-copy small{font-size:8px}.hero-brand-band{padding:5px 9px 5px 5px;gap:7px}.lab-section .section-top p,.people-section .section-top p,.growth-copy>p,.approach-left p,.bottom-cta p{font-size:14px}.step-text h3{font-size:16px}.step-text p{font-size:13px}.people-section .value-card h3{font-size:23px}.people-section .value-card p{font-size:14px}.growth-points b{font-size:14px}.growth-points small{font-size:12px}.approach-steps{padding:3px 15px}.tool-grid{gap:18px}.bottom-cta:before{font-size:300px}.orbit-brand-footer .orbit-emblem{width:65px;height:65px}.orbit-brand-footer .orbit-wordmark strong{font-size:23px}}
 
+
+/* Fix sticky navigation color conflict between ReactBits and cosmic theme */
+.header.rb-scrolled,
+.header.rb-scrolled.studio-header-light{
+  background:rgba(8,12,27,.97)!important;
+  color:#f6f9ff!important;
+  border-bottom-color:rgba(187,215,255,.17)!important;
+  box-shadow:0 10px 35px -22px rgba(0,0,0,.65);
+  backdrop-filter:blur(20px) saturate(1.2);
+}
+.header.rb-scrolled .desktop-nav,
+.header.rb-scrolled.studio-header-light .desktop-nav{color:#d5e1f6!important}
+.header.rb-scrolled .text-action,
+.header.rb-scrolled.studio-header-light .text-action{color:#e2edfd!important}
+.header.rb-scrolled .orbit-wordmark,
+.header.rb-scrolled.studio-header-light .orbit-wordmark{color:#f5f8ff!important}
+.header.rb-scrolled .orbit-wordmark small,
+.header.rb-scrolled.studio-header-light .orbit-wordmark small{color:#b4c9e6!important}
+.header.rb-scrolled .btn-dark,
+.header.rb-scrolled.studio-header-light .btn-dark{background:#caff8e!important;color:#172827!important}
+@media(max-width:920px){
+  .header.rb-scrolled .mobile-nav,
+  .header.rb-scrolled.studio-header-light .mobile-nav{background:#10172c!important;color:#edf5ff!important}
+  .header.rb-scrolled .menu-toggle,
+  .header.rb-scrolled.studio-header-light .menu-toggle{background:rgba(255,255,255,.08)!important;border-color:rgba(202,225,255,.28)!important}
+  .header.rb-scrolled .menu-toggle span,
+  .header.rb-scrolled.studio-header-light .menu-toggle span{background:#d3ffa7!important}
+}
 </style><meta content="light" name="color-scheme"/></head>
 <body>
 <svg aria-hidden="true" class="svg-defs" xmlns="http://www.w3.org/2000/svg">
