@@ -1,0 +1,84 @@
+/* 智研学途 - mobile-first performance and responsive layout */
+@media (max-width: 767px), (hover:none) and (pointer:coarse){
+  html{scroll-behavior:auto}
+  body{overflow-x:clip;overscroll-behavior-x:none}
+  .header,.header.studio-header-light,.header.rb-scrolled,.header.rb-scrolled.studio-header-light{background:#0c1328!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;color:#f5f8ff!important;box-shadow:0 6px 18px rgba(0,0,0,.2)}
+  .header .mobile-nav,.header.studio-header-light .mobile-nav{background:#111c34!important}
+  .studio-video,.studio-grain,.studio-glow,.studio-grid{display:none!important}
+  .studio-hero{background:radial-gradient(ellipse at 68% 43%,#4d315e 0%,#2b254c 38%,#10192e 76%,#0c1427 100%);padding:34px 20px 72px;min-height:0;gap:4px}
+  .studio-hero::after{height:85px}
+  .studio-stage-aura,.studio-halo-two,.studio-side-mark,.studio-orbit-tag,.bottom-cta::before{display:none!important}
+  .studio-halo-one{opacity:.24}
+  .studio-avatar-rig{display:none!important}
+  .studio-avatar-static{display:block!important;left:50%;bottom:-8%;width:min(112%,440px);transform:translateX(-50%)!important;filter:none!important;will-change:auto}
+  .studio-art{height:clamp(310px,91vw,420px);width:100%;max-width:460px;margin:0 auto;overflow:visible}
+  .studio-avatar-badge{bottom:13%;right:0;font-size:9px;background:#121b36e8;border-radius:13px;box-shadow:0 6px 18px rgba(0,0,0,.15)}
+  .studio-bubble{top:11%;right:0;max-width:156px;font-size:11px;box-shadow:0 8px 22px rgba(0,0,0,.16)}
+  .studio-copy{padding:0!important}
+  .studio-eyebrow{font-size:10px;letter-spacing:.04em;margin-bottom:15px}
+  .studio-title{font-size:clamp(44px,11.5vw,62px);line-height:1.14;letter-spacing:-.055em}
+  .studio-title-accent{background-position:40% center}
+  .studio-intro{font-size:21px;line-height:1.48;margin-top:16px}
+  .studio-typing-line{font-size:12px;min-height:23px;white-space:normal}
+  .studio-lead{font-size:14px;line-height:1.8;margin-top:14px}
+  .studio-meta{margin-top:18px;gap:8px;font-size:11px}
+  .studio-actions{margin-top:20px;gap:10px}
+  .studio-actions .btn{min-height:46px;padding:12px 15px;font-size:14px}
+  .studio-ghost{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+  .studio-scroll{bottom:17px;left:20px}
+  .studio-count{bottom:16px;right:20px}
+  .ticker{height:auto;min-height:46px;overflow:hidden}
+  .ticker-track{animation:none!important;transform:none!important;gap:20px}
+  .ticker-track span{white-space:nowrap}
+  .ticker-track b{font-size:15px}
+  .section{padding-top:60px;padding-bottom:62px}
+  .section-top h2,.growth-copy h2{font-size:clamp(35px,9vw,48px)}
+  .approach-left h2{font-size:clamp(33px,8.8vw,48px)}
+  .section-top p,.growth-copy>p,.approach-left p,.bottom-cta p{font-size:14px;line-height:1.8}
+  .lab-section::after,.approach-section::after,.growth-section::after,.people-section::after,.bottom-cta::after{opacity:.20;background-size:70px 70px,160px 160px,160px 160px}
+  .lab-section,.approach-section,.growth-section,.people-section,.bottom-cta{background-attachment:scroll!important}
+  .rb-filters{display:flex!important;flex-wrap:nowrap!important;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none;gap:9px;padding:3px 1px 10px}
+  .rb-filters::-webkit-scrollbar{display:none}
+  .rb-filter{flex:none;min-height:44px;font-size:13px;padding:10px 14px}
+  .tool-grid{grid-template-columns:minmax(0,1fr);gap:15px}
+  .tool-card{min-height:445px;box-shadow:0 12px 30px rgba(0,0,0,.15);transition:none!important}
+  .tool-card:hover,.tool-card.in-view:hover{transform:none!important;box-shadow:0 12px 30px rgba(0,0,0,.15)!important}
+  .tool-card h3{font-size:25px}
+  .tool-card p{font-size:14px;line-height:1.75}
+  .tool-card .card-link{min-height:44px;display:inline-flex;align-items:center}
+  .rb-spotlight::before,.rb-spotlight::after{filter:none!important}
+  .approach-steps,.people-section .value-card,.hero-brand-band,.studio-avatar-badge{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+  .people-section .value-card{background:#1d2b48;border-color:#405373;box-shadow:0 10px 28px rgba(0,0,0,.18)}
+  .approach-steps{background:#13243c}
+  .growth-card{box-shadow:0 14px 32px rgba(0,0,0,.2)}
+  .growth-stats div small{font-size:10px}
+  .growth-points small{font-size:13px}
+  .growth-copy{margin-top:10px}
+  .bottom-cta{padding:65px 0}
+  .bottom-cta h2{font-size:clamp(39px,9.5vw,56px)}
+  .footer{padding-top:42px}
+  .footer-main p,.footer-links a,.footer-links button{font-size:14px}
+  .modal-dialog{width:calc(100% - 16px);max-height:calc(100dvh - 18px);border-radius:16px}
+  .modal-content{max-height:calc(100dvh - 90px);overflow-y:auto;overscroll-behavior:contain}
+  .form-grid{grid-template-columns:1fr}
+  .form-group input,.form-group select,.form-group textarea{font-size:16px!important;min-height:44px}
+  button,a,[role=button]{touch-action:manipulation}
+  button,.mobile-nav a,.mobile-nav button{min-height:44px}
+  .reveal,.reveal:not(.in-view){opacity:1!important;transform:none!important;transition:none!important}
+  .word-illus,.float-card,.chem-inner-liquid,.cb,.bubble,.studio-title-accent,.studio-title-spark,.studio-caret,.studio-bubble,.studio-avatar-badge,.studio-halo,.studio-scroll-line:before,.studio-pulse,.rb-shiny,.rb-shiny::before,.rb-shiny::after,.growth-float,.bottom-cta::before{animation:none!important}
+  .studio-glow,.studio-stage-aura,.studio-video{animation:none!important}
+  .rb-sparks{display:none!important}
+  .studio-primary::after,.studio-ghost::after{display:none}
+  .lab-section,.approach-section,.growth-section,.people-section{content-visibility:auto;contain-intrinsic-size:auto 850px}
+}
+@media(max-width:389px){
+  .studio-title{font-size:clamp(42px,11vw,49px)}
+  .studio-art{height:clamp(290px,89vw,350px)}
+  .studio-avatar-static{width:112%;bottom:-7%}
+  .orbit-brand{gap:2px;padding-right:4px}
+  .orbit-wordmark strong{font-size:17px}
+  .studio-actions .btn{font-size:13px;padding:11px 12px}
+  .studio-bubble{max-width:133px}
+  .header-actions{gap:7px}
+}
+@media(prefers-reduced-motion:reduce){.ticker-track,.studio-typing-line,.word-illus{animation:none!important}}
